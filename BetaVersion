@@ -1,0 +1,158 @@
+if game.PlaceId == 6206893534 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Baconi’s Hub(Cobra Kai)", "Sentinel")
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Bags")
+    MainSection:NewToggle("Stay on bag", "tp you on the top of the bag", function(v)
+        getgenv().autoblackbag = v
+       while true do
+           if not
+getgenv().autoblackbag then return end
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(56.3307877, 9.82232189, -27.4355011, 0.0140739493, -6.54082868e-08, 0.999900937, 4.88122112e-08, 1, 6.47277147e-08, -0.999900937, 4.78963997e-08, 0.0140739493)
+            wait()
+        end
+    end)
+    MainSection:NewToggle("Stay on bag(Safezone)", "tp you on the top of the bag", function(v)
+        getgenv().autoblackbag = v
+        while true do
+            if not getgenv().autoblackbag then return end
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(97.808876, 9.85557461, 75.6152191, 0.0428906791, -8.49579962e-09, 0.999079764, -4.77750959e-08, 1, 1.05546185e-08, -0.999079764, -4.81838285e-08, 0.0428906791)
+            wait()
+        end
+    end)
+    MainSection:NewToggle("Stay on bag 2(Safezone)", "tp you on the top of the bag", function(v)
+        getgenv().autoblackbag = v
+        while true do
+            if not getgenv().autoblackbag then return end
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(98.0530777, 9.85223961, 71.0164185, 0.013808053, 2.96444362e-08, 0.999904692, -1.18565593e-08, 1, -2.94835303e-08, -0.999904692, -1.14483187e-08, 0.013808053)
+            wait()
+        end
+    end)
+    MainSection:NewToggle("Stay on the bag 3(Safezone)", "tp you on the top of the bag", function(v)
+        getgenv().autoblackbag = v
+        while true do
+            if not getgenv().autoblackbag then return end
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(97.8537292, 9.85480976, 66.1067047, -0.0675907806, -9.69354641e-09, 0.997713149, -2.8562182e-08, 1, 7.7808e-09, -0.997713149, -2.79709536e-08, -0.0675907806)
+            wait()
+        end
+    end)
+    local MainSection = Main:NewSection("Strength")
+MainSection:NewToggle("DoubleKick", "Spam your strength", function(v)
+       getgenv().autostrength = v
+       while true do
+           if not getgenv().autostrength then return end
+            local Event = game:GetService("ReplicatedStorage").Remotes.DoubleReg
+            Event:FireServer()
+            wait()
+       end
+    end)
+MainSection:NewToggle("HandKick", "Spam your strength", function(v)
+      getgenv().handkick = v
+      while true do
+          if not
+getgenv().handkick then return end
+            local Event = game:GetService("ReplicatedStorage").Remotes.HandKick:FireServer()
+            wait()
+       end
+    end)
+MainSection:NewToggle("JumpKick", "Bruce Lee", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Baconi1/jumpkick/main/Kick"))()
+    end)
+MainSection:NewToggle("Dumbell", "Fast lift", function(v)
+      getgenv().autodumbell = v
+      while true do
+          if not getgenv().autodumbell then return end
+          local A_1 = "Rep"
+          local A_2 = 2
+          local Event = game:GetService("ReplicatedStorage").Remotes.Dumbell
+          Event:FireServer(A_1, A_2)
+            wait(0.001)
+       end
+    end)
+    local MainSection = Main:NewSection("Health")
+MainSection:NewToggle("Bench", "Spam Health", function(v)
+      getgenv().autobench = v
+      while true do
+          if not getgenv().autobench then return end
+          local Event = game:GetService("ReplicatedStorage").Remotes.Bench
+          Event:FireServer()
+            wait(0.001)
+       end
+    end)
+    local MainSection = Main:NewSection("Extra")
+MainSection:NewToggle("Pushup", "Auto Pushup", function(v)
+      getgenv().autopushup = v
+      while true do
+          if not getgenv().autopushup then return end
+          local Event = game:GetService("ReplicatedStorage").Remotes.PushUp
+          Event:FireServer()
+            wait(0.001)
+       end
+    end)
+MainSection:NewToggle("SitUp", "Auto SitUp", function(v)
+      getgenv().autositup = v
+      while true do
+          if not getgenv().autositup then return end
+          local Event = game:GetService("ReplicatedStorage").Remotes.SitUp
+          Event:FireServer()
+            Wait()
+       end
+    end)
+    local MainSection = Main:NewSection("Go to More Section")
+    local MainSection = Main:NewSection("To execute more scripts")
+    local MainSection = Main:NewSection("Made By Just_Baconi")
+    local More = Window:NewTab("More")
+    local MoreSection = More:NewSection("Scripts")
+    MoreSection:NewButton("inf yield", "gives you inf yield", function(v)
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true)) ()
+    end)
+    MoreSection:NewButton("Straw Hub", "A straw hub script", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/COBRA%20KAI%20KARATE%20%7C%20OPEN%20SOURCE%20GUI")) ()
+    end)
+    MoreSection:NewButton("Tea Hub", "Drink some tea", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Aurelius0863/TeaHub/main/Loader.lua")) ()
+    end)
+    MoreSection:NewButton("Fly(For Mobile users", "fly", function(v)
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+    end)
+    MoreSection:NewButton("Anti Afk(Made by haha_noobme)", "Wont kick you while you're afk", function(v)
+    wait(0.5)local ba=Instance.new("ScreenGui")
+local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,304,0,52)
+ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti Afk Kick Script"ca.TextColor3=Color3.new(0,1,1)
+ca.TextSize=22;da.Parent=ca
+da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+da.Size=UDim2.new(0,304,0,107)_b.Parent=da
+_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+_b.Size=UDim2.new(0,304,0,21)_b.Font=Enum.Font.Arial;_b.Text="Made by Penguin"
+_b.TextColor3=Color3.new(1,1,1)_b.TextSize=20;ab.Parent=da
+ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377379,0)
+ab.Size=UDim2.new(0,304,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Script Started"
+ab.TextColor3=Color3.new(1,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+bb:CaptureController()bb:ClickButton2(Vector2.new())
+ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)ab.Text="Script Re-Enabled"end)
+    end)
+    More:NewSection("New Update(Long distance skill)")
+    More:NewSection("Version 3.2 of Baconi's HUB")
+    More:NewSection("Cobra kai")
+    local Skills = Window:NewTab("Skills")
+    local SkillsSection = Skills:NewSection("Skills")
+    SkillsSection:NewToggle("Long Range", "Long range skill", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Baconi1/Hitbox/main/Long%20range"))()
+    end)
+    local Updates = Window:NewTab("Updates")
+    local UpdatesSection = Updates:NewSection("What’s New?")
+    local UpdatesSection = Updates:NewSection("-New long distance skill")
+    local UpdatesSection = Updates:NewSection("-x2 more faster bench and strength")
+    local UpdatesSection = Updates:NewSection("-New JumpKick feature")
+    local Credits = Window:NewTab("Credits")
+    local CreditsSection = Credits:NewSection("Made By Baconi aka Just_Baconi")
+    local CreditsSection = Credits:NewSection("Inspired By")
+    CreditsSection:NewLabel("haha_noobme")
+    CreditsSection:NewLabel("Cryptic_Jayzzer")
+end
